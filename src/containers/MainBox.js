@@ -14,29 +14,33 @@ class MainBox extends React.Component {
       const currActive = document.getElementsByClassName("active")
       currActive[0].classList.remove("active")
 
-      if (name === "photo") {
+      switch(name){
+        case "photo":
         this.setState({
           activeButton: Photos
         })
         document.getElementsByTagName("A").photo.classList.add("active")
-      } else if (name === "cocktail") {
+        break;
+        case "cocktail":
         this.setState({
           activeButton: Cocktails
         })
         document.getElementsByTagName("A").cocktail.classList.add("active")
-
-      } else if (name === "pokemon") {
+        break;
+        case "pokemon":
         this.setState({
           activeButton: Pokemon
         })
         document.getElementsByTagName("A").pokemon.classList.add("active")
-
-      } else if (name === "profile") {
+        break;
+        case "profile":
         this.setState({
           activeButton: Profile
         })
         document.getElementsByTagName("A").profile.classList.add("active")
-
+        break;
+        default:
+        console.log("SLOW DOWN PARTNER!")
       }
     }
   }
