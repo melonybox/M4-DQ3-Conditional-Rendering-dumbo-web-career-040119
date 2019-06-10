@@ -16,29 +16,29 @@ class MainBox extends React.Component {
 
       switch(name){
         case "photo":
-        this.setState({
-          activeButton: Photos
-        })
-        document.getElementsByTagName("A").photo.classList.add("active")
-        break;
+          this.setState({
+            activeButton: Photos
+          })
+          document.getElementsByTagName("A").photo.classList.add("active")
+          break;
         case "cocktail":
-        this.setState({
-          activeButton: Cocktails
-        })
-        document.getElementsByTagName("A").cocktail.classList.add("active")
-        break;
+          this.setState({
+            activeButton: Cocktails
+          })
+          document.getElementsByTagName("A").cocktail.classList.add("active")
+          break;
         case "pokemon":
-        this.setState({
-          activeButton: Pokemon
-        })
-        document.getElementsByTagName("A").pokemon.classList.add("active")
-        break;
+          this.setState({
+            activeButton: Pokemon
+          })
+          document.getElementsByTagName("A").pokemon.classList.add("active")
+          break;
         case "profile":
-        this.setState({
-          activeButton: Profile
-        })
-        document.getElementsByTagName("A").profile.classList.add("active")
-        break;
+          this.setState({
+            activeButton: Profile
+          })
+          document.getElementsByTagName("A").profile.classList.add("active")
+          break;
         default:
         console.log("SLOW DOWN PARTNER!")
       }
